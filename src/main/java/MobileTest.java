@@ -37,15 +37,7 @@ public class MobileTest {
 
             WebElement el4 = driver.findElement(AppiumBy.id("com.android.permissioncontroller:id/permission_allow_foreground_only_button"));
             el4.click();
-
-            WebElement el5 = driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"Username\")"));
-            el5.sendKeys("kamala");
-
-            WebElement el6 = driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"Password\")"));
-            el6.sendKeys("test");
-
-            WebElement el7 = driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"Login\").instance(0)"));
-            el7.click();
+            
             driver.quit();
         } catch (MalformedURLException e) {
             e.printStackTrace();
